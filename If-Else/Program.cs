@@ -11,7 +11,7 @@ class Program
         Console.Write("Escreva seu nome: ");
         string nome = Console.ReadLine();
         Console.Write("Saldo em conta: R$");
-        double saldo = double.Parse(Console.ReadLine());
+        double saldo = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
         Console.WriteLine();
 
         Console.WriteLine("------ Dados do produto ------");
@@ -19,7 +19,7 @@ class Program
         Console.Write("Nome do produto: ");
         string produto = Console.ReadLine();
         Console.Write("Valor do produto: R$");
-        double valorProduto = double.Parse(Console.ReadLine());
+        double valorProduto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
         Console.WriteLine();
 
         double conta = saldo - valorProduto;
